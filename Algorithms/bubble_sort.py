@@ -12,14 +12,14 @@ In next step, 5 is compred to 3 and swap takes place and so on until we have the
 [4,3,2,5,1,7] -> Swap 1 with 5
 [4,3,2,1,5,7]-> No Swap
 '''
-def bubble_sort(numbers):
-    for _ in range(len(numbers) - 1): # Outer for loop to make the loop underlying loop run n-1 times from 0th element.
-        for i in range(len(numbers) - 1): #Inner loop to compare current element with next element.
-            if numbers[i] > numbers[i + 1]:
-                numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]  #Swap the numbers
+def bubble_sort(arr):
+    for _ in range(len(arr) - 1): # Outer for loop to make the loop underlying loop run n-1 times from 0th element.
+        for i in range(len(arr) - 1): #Inner loop to compare current element with next element.
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]  #Swap the numbers
 
     return numbers
 
 if __name__ == '__main__':
-    numbers=[5,4,3,2,1,7,8,9]
-    print(bubble_sort(numbers))
+    arr=[5,4,3,2,1,7,8,9]
+    print(bubble_sort(arr))
